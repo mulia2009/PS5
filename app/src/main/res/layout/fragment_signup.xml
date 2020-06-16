@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_note"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        ads:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/adView2" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:text="."
+        android:visibility="invisible"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:clickable="true"
+        android:src="@drawable/ic_favorite"
+        android:visibility="invisible"
+        ads:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        ads:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="invisible" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_weight="2.71"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <ScrollView
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        ads:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/adView2"
+        tools:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            tools:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:orientation="vertical"
+                android:weightSum="1"
+                tools:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    tools:visibility="invisible">
+
+                    <WebView
+                        android:id="@+id/webviewcover"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="2.71"
+                        tools:visibility="invisible">
+
+                        <TextView
+                            android:id="@+id/tvlink"
+                            android:layout_width="1dp"
+                            android:layout_height="1dp"
+                            android:layout_x="3dp"
+                            android:layout_y="154dp"
+                            android:text="TextView"
+                            android:visibility="invisible"
+                            tools:visibility="invisible" />
+                    </WebView>
+
+                    <TextView
+                        android:id="@+id/welcomeTextView"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="2.71"
+                        android:background="#640B0A0A"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="#FFFFFF"
+                        tools:visibility="invisible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_weight="2.71"
+                android:background="@drawable/gradient"
+                android:orientation="vertical"
+                tools:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    tools:visibility="invisible" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/gbrx"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_weight="2.71"
+                android:layout_x="-13dp"
+                android:layout_y="171dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+            <Button
+                android:id="@+id/fetchButton"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:text="Button"
+                android:textAlignment="textEnd"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_toolbar"
+        app:itemIconTint="@drawable/state_bnve"
+        app:itemTextColor="@drawable/state_bnve"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

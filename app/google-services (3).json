@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "693356763648",
+    "firebase_url": "https://detik-baru.firebaseio.com",
+    "project_id": "detik-baru",
+    "storage_bucket": "detik-baru.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693356763648:android:b6d205c39c6ba3ecc196e5",
+        "android_client_info": {
+          "package_name": "com.mulia754.detikPS"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "693356763648-f84c8c63pc2dr4fd5h1a2vga76m1nvg5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD70O2-urGrXM_XqRQxwP5mYjhwg6u_AVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "693356763648-f84c8c63pc2dr4fd5h1a2vga76m1nvg5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

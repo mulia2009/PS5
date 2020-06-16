@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Detik PS</string>
+    <string name="new_note">Create New Note</string>
+    <string name="note_title_hint">Enter title</string>
+    <string name="note_content_hint">Enter content</string>
+    <string name="save">Save</string>
+    <string name="fetch_remote_welcome_message">fetch remote welcome</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_header_main">Berita\nIndonesia</string>
+    <string name="tab_text_1">Terkini</string>
+    <string name="tab_text_2">Militer</string>
+    <string name="tab_text_3">Persit</string>
+    <string name="tab_text_4">Politik</string>
+    <string name="tab_text_5">Olahraga</string>
+    <string name="tab_text_6">Lain-Lain</string>
+
+
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="button">Button</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-2778656306088354/4132369550</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-2778656306088354/7880042877</string>
+    <string name="web_client_id">104981677986-mqngdm9m7umrksrbs5kmjrv00gokqk3f.apps.googleusercontent.com</string>
+    <string name="native_ad_unit_id">ca-app-pub-2778656306088354/7346023547</string>
+    <string name="link_kemhan">http://www.kemhan.go.id</string>
+    <string-array name="siswa">
+        <item>Pilih Hari</item>
+        <item>Senin</item>
+        <item>Selasa</item>
+        <item>Rabu</item>
+        <item>Kamis</item>
+        <item>Jumat</item>
+        <item>Sabtu</item>
+        <item>Minggu</item>
+
+    </string-array>
+
+    <string name="ringkasan">Dunia</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="info">Info</string>
+    <string name="riwayat">Riwayat</string>
+    <string name="not_update">Data Riwayat Belum Di Update</string>
+    <string name="confirmed">Positif</string>
+    <string name="recovered">Sembuh</string>
+    <string name="deaths">Kematian</string>
+    <string name="keterangan">Ket :</string>
+    <string name="world_summary_data">Data Dunia</string>
+    <string name="from_corona">Dari Covid-19</string>
+    <string name="last_update">Last Update</string>
+    <string name="indonesia_summary_data">Data Indonesia</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

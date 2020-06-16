@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="10dp"
+    android:background="#0929ED"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="1"
+    app:cardBackgroundColor="#CA0E0303"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="3dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:padding="5dp"
+            app:cardBackgroundColor="#00FFFFFF"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/img_url"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#00FFFFFF"
+                android:scaleType="fitXY"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_note_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:background="#00FFFFFF"
+
+            android:gravity="center_vertical"
+            android:text="Judul"
+            android:textColor="#F1F6F3F3"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="27dp"
+        android:layout_height="16dp"
+        android:background="#00FFFFFF"
+        android:orientation="vertical"
+        tools:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#00FFFFFF"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tvcover"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#00FFFFFF"
+                android:text="TextView"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvwaktu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:background="#00FFFFFF"
+                android:text="waktu"
+                android:textColor="@color/cardview_shadow_start_color"
+                android:textSize="12sp"
+                tools:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_note_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:background="#00FFFFFF"
+                android:text="link"
+                android:textAlignment="center"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

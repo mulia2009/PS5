@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Android="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:background="#373636"
+    android:orientation="vertical"
+    android:weightSum="1"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="3dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
+
+        <ImageView
+            android:id="@+id/img_url"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="#373636"
+            android:scaleType="fitXY"
+            Android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/drawable_purple_gradient" />
+
+        <TextView
+            android:id="@+id/tvwaktu"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#B2100A0A"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="waktu"
+            android:textColor="#E6E2E2"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_url"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_note_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B2100A0A"
+            android:gravity="bottom|center_vertical"
+            android:paddingStart="20dp"
+
+            android:paddingEnd="20dp"
+            android:text="Judul"
+            android:textColor="#FBF6F6"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvwaktu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:background="#373636"
+            android:orientation="vertical"
+            android:padding="5dp"
+            Android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:background="#373636"
+                android:orientation="vertical"
+                android:weightSum="1"
+                Android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/tvcover"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:background="#373636"
+                    android:text="TextView"
+                    android:textColor="#FBF6F6"
+                    android:visibility="invisible"
+                    Android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_note_content"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="5dp"
+                    android:background="#373636"
+                    android:text="link"
+                    android:textAlignment="center"
+                    android:textColor="#FBF6F6"
+                    android:visibility="invisible"
+                    Android:visibility="invisible" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

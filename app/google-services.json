@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "104981677986",
+    "firebase_url": "https://detik-ps.firebaseio.com",
+    "project_id": "detik-ps",
+    "storage_bucket": "detik-ps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104981677986:android:ce18887eaaab4fb14494fb",
+        "android_client_info": {
+          "package_name": "com.mulia754.ps5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104981677986-mqngdm9m7umrksrbs5kmjrv00gokqk3f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJHgp_OrOACU4XswVGnKg1YHxweJkQBiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "104981677986-mqngdm9m7umrksrbs5kmjrv00gokqk3f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mulia754.detikPS">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning,UnusedAttribute">
+        <activity android:name=".buat.buatTerbaru"></activity>
+        <activity
+            android:name=".swipe.teknologi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".swipe.olahraga"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".beritaUmum"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".auth.ProfileActivity" />
+        <activity
+            android:name=".profilPS2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kontakPS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".corona.activities.MainActivityCorona"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buat.buatVideo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".berita_Video"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PilarSempana"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bottom.bottom_videox"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bottom.bottom_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buat.newCatatan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".halamanWebsite"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buat.buatManualItemSaja"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buat.buatManual"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buat.PasswordNewNote"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".toolbar_menu.toolbar_love" />
+        <activity android:name=".toolbar_menu.toolbarPS" />
+        <activity
+            android:name=".buat.buatBerita"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buat.buatBeritaMiliter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buat.buatBeritaPersit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buat.buatBeritaPolitik"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buat.buatBeritaOlahraga"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buat.buatBeritaLainLain"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bottom.bottom_akun"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".berita"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".berita2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buat.NewNoteActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".indonews.MainActivityNews"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".indonews.EntertaimentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".indonews.HealthActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".indonews.BusinessActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".indonews.TechnologyActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".indonews.HeadLineActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".indonews.SportsNewsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".indonews.OpenNewsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".swipe.MainActivitySlide"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+        <meta-data
+            android:name="android.app.searchable"
+            android:value="true" />
+    </application>
+
+</manifest>

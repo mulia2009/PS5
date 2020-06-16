@@ -1,0 +1,1811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:Android="http://schemas.android.com/tools"
+
+    android:background="@drawable/gradient_background"
+
+    tools:context="com.mulia754.detikPS.bottom.bottom_info">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_favorite"
+        android:visibility="invisible"
+        ads:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        ads:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.gms.ads.AdView>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        ads:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/adView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="249dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <WebView
+                    android:id="@+id/webviewcover"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="2.71">
+
+                    <TextView
+                        android:id="@+id/tvlink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_x="3dp"
+                        android:layout_y="154dp"
+                        android:text="TextView"
+                        android:visibility="invisible" />
+                </WebView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/imageHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="172dp"
+                        android:layout_weight="2.71"
+                        android:onClick="goToURL"
+                        android:scaleType="fitXY"
+                        Android:scaleType="centerCrop"
+                        ads:srcCompat="@drawable/button_rounded" />
+
+                    <TextView
+                        android:id="@+id/welcomeTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="39dp"
+                        android:layout_weight="2.71"
+                        android:background="#640B0A0A"
+                        android:gravity="center"
+                        android:onClick="goToURL"
+                        android:text="TextView"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.71"
+                android:background="@drawable/gradient"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="292dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            ads:layout_constraintEnd_toEndOf="parent"
+                            ads:layout_constraintStart_toStartOf="parent"
+                            ads:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKEMHAN"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/gradient"
+                                android:clickable="true"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardCornerRadius="15dp"
+                                app:cardBackgroundColor="#BFFFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewKemhan"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="102dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/tvLinkKemhan"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@drawable/gradient"
+                                        android:text="@string/link_kemhan" />
+
+                                    <TextView
+                                        android:id="@+id/textView5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KEMENTRIAN PERTAHANAN"
+                                        android:textColor="#090505"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardTNI"
+                                android:layout_width="150dp"
+                                android:layout_height="138dp"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardCornerRadius="15dp"
+                                app:cardBackgroundColor="#BFFFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewTNI"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/tvLinkTNI"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@drawable/gradient"
+                                        android:text="https://www.tni.mil.id/" />
+
+                                    <TextView
+                                        android:id="@+id/textViewTNI"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="TENTARA NASIONAL INDONESIA"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal"
+                            android:paddingStart="10dp"
+                            ads:layout_constraintEnd_toEndOf="parent"
+                            ads:layout_constraintStart_toStartOf="parent"
+                            ads:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardTNIAD"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardCornerRadius="15dp"
+                                app:cardBackgroundColor="#BFFFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewAD"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/tvLinkAD"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@drawable/gradient"
+                                        android:text="https://www.tniad.mil.id/" />
+
+                                    <TextView
+                                        android:id="@+id/textViewAD"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="TNI ANGKATAN DARAT"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardTNIAL"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardCornerRadius="15dp"
+                                app:cardBackgroundColor="#BFFFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewAL"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                      />
+
+                                    <TextView
+                                        android:id="@+id/tvLinkAL"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@drawable/gradient"
+                                        android:text="https://www.tnial.mil.id/" />
+
+                                    <TextView
+                                        android:id="@+id/textViewAL"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="TNI ANGKATAN LAUT"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardTNIAU"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardCornerRadius="15dp"
+                                app:cardBackgroundColor="#BFFFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewAU"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/tvLinkAU"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@drawable/gradient"
+                                        android:text="https://www.tni-au.mil.id/" />
+
+                                    <TextView
+                                        android:id="@+id/textViewAU"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="TNI ANGKATAN UDARA"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal"
+                            android:paddingStart="10dp"
+                            ads:layout_constraintEnd_toEndOf="parent"
+                            ads:layout_constraintStart_toStartOf="parent"
+                            ads:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKodiklat"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewKodiklat"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/textViewKodiklat"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KODIKLAT"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKopassus"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewcardKopassus"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/textViewcardKopassus"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KOPASSUS"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKostrad"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewcardKostrad"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/textViewcardKostrad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KOSTRAD"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardPussenif"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewcardPussenif"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/textViewcardPussenif"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="PUSSENIF"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardPussenkav"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewcardPussenkav"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/textViewcardPussenkav"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="PUSSENKAV"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardPussenarmed"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewcardPussenarmed"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/textViewcardPussenarmed"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="PUSSENARMED"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardPussenArhanud"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewcardPussenArhanud"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/textViewcardPussenArhanud"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="PUSSEN ARHANUD"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardDirziad"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardCornerRadius="15dp"
+                                app:cardBackgroundColor="#BFFFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewcardDirziad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/textViewcardDirziad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="DIRZIAD"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardPusPenerbad"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardCornerRadius="15dp"
+                                app:cardBackgroundColor="#BFFFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewcardPusPenerbad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/textViewcardPusPenerbad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="PUSPENERBAD"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardPalad"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewKodiklaaat"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/textViewKodiklaaat"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="DITPALAD"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardhUBAD"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/SSSSS"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/textViewcardSSSKostrad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="DITHUBAD"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardDirtopad"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardCornerRadius="15dp"
+                                app:cardBackgroundColor="#BFFFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewcardcardDirtopad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/textViewcardcardDirtopad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="DIRTOPAD"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardPusBekangad"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardCornerRadius="15dp"
+                                app:cardBackgroundColor="#BFFFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewcardPusBekangad"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/textViewcardPusBekangad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="PUSBEKANG AD"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardPuspomad"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewcardPuspomad"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/textViewcardPuspomad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="PUSPOMAD"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardDitajenad"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardCornerRadius="15dp"
+                                app:cardBackgroundColor="#BFFFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewcardDitajenad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/textViewcardcardDitajenad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="DITAJENAD"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardDitkuad"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/aaaaa"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/textViSewcardKaaopassus"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="DITKUAD"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKumad"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewcardPudsdssenif"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/textViewcarkkdPussenif"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="DITKUMAD"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardPuskesad"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardCornerRadius="15dp"
+                                app:cardBackgroundColor="#BFFFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewcardcardPuskesad"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/textViewcardcardPuskesad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="PUSKESAD"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal"
+                            android:paddingStart="10dp"
+                            ads:layout_constraintEnd_toEndOf="parent"
+                            ads:layout_constraintStart_toStartOf="parent"
+                            ads:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKodamJaya"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardCornerRadius="15dp"
+                                app:cardBackgroundColor="#BFFFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/cardKodam4xx"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/cardKodam4sda"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KODAM JAYA"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKodamIM"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewcardKodamIM"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/textViewcardKodamIM"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KODAM IM"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKodam1"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewcardcardKodam1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/textViewcardcardKodam1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KODAM I"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKodam2"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViecardKodam2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/cardKodam2x"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KODAM II"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKodam3"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/cardKodam3a"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/cardKodam3s"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KODAM III"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKodam4"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/cardKodam4a"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/cardKodam4v"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KODAM IV"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKodam5"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/cardKodam5a"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/cardKodam5s"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KODAM V"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKodam6"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/cardKodam6d"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/cardKodam6q"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KODAM VI"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKodam9"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardCornerRadius="15dp"
+                                app:cardBackgroundColor="#BFFFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/cardKodam9QQ"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/cardKodam9Q"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KODAM IX"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKodam12"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/cardKodam12ASD"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/cardKodam12SS"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KODAM XII"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKodam13"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardCornerRadius="15dp"
+                                app:cardBackgroundColor="#BFFFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/cardKodam4acxz"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/cardKodam4aavv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KODAM XIII"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKodam14"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardCornerRadius="15dp"
+                                app:cardBackgroundColor="#BFFFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/cardKodam14w"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/cardKodam14f"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KODAM XIV"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKodam16"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardCornerRadius="15dp"
+                                app:cardBackgroundColor="#BFFFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/cardKodam4s"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/cardKodam4cv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KODAM XVI"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKodam17"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardCornerRadius="15dp"
+                                app:cardBackgroundColor="#BFFFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/cardKodam4sd"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/cardKodam4dsa"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KODAM XVII"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardKodam18"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/gradient"
+                                android:onClick="ButtonOnClick"
+                                android:padding="5dp"
+                                ads:cardBackgroundColor="#BFFFFFFF"
+                                ads:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gradient"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/cardKodam4cxz"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:background="@drawable/gradient"
+                                        android:padding="5dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/cardKodam4vv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="36dp"
+                                        android:background="@drawable/gradient"
+                                        android:gravity="center"
+                                        android:text="KODAM XVIII"
+                                        android:textColor="#0B0909"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal"
+                            android:paddingStart="10dp"
+                            ads:layout_constraintEnd_toEndOf="parent"
+                            ads:layout_constraintStart_toStartOf="parent"
+                            ads:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        ads:layout_constraintEnd_toEndOf="parent"
+                        ads:layout_constraintStart_toStartOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardmAJALAHtNI"
+                            android:layout_width="350dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:background="@drawable/gradient"
+                            android:onClick="ButtonOnClick"
+                            android:padding="5dp"
+                            ads:cardCornerRadius="15dp"
+                            app:cardBackgroundColor="#BFFFFFFF">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:background="@drawable/gradient">
+
+                                <ImageView
+                                    android:id="@+id/SASASASAS"
+                                    android:layout_width="83dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/gradient"
+                                    android:padding="5dp"
+                                    android:src="@drawable/majalah" />
+
+                                <TextView
+                                    android:id="@+id/textVieSASAwAU"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/gradient"
+                                    android:gravity="center"
+                                    android:text="KUMPULAN MAJALAH MILITER"
+                                    android:textColor="#0B0909"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/gbrx"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.71"
+                android:layout_x="-13dp"
+                android:layout_y="171dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/fetchButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Button"
+                android:textAlignment="textEnd"
+                android:visibility="invisible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_toolbar"
+        app:itemIconTint="@drawable/state_bnve"
+        app:itemTextColor="@drawable/state_bnve"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

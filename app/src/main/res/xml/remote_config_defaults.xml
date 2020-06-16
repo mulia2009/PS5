@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>loading_phrase2</key>
+        <value>Load berita2...</value>
+    </entry>
+    <entry>
+        <key>welcome_message_caps2</key>
+        <value>false2</value>
+    </entry>
+    <entry>
+        <key>welcome_message2</key>
+        <value>Welcome to my awesome app2!</value>
+    </entry>
+    <entry>
+        <key>gambar2</key>
+        <value>gambar2</value>
+    </entry>
+    <entry>
+        <key>link2</key>
+        <value>link2</value>
+    </entry>
+</defaultsMap>
+    <!-- END xml_defaults -->

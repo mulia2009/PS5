@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayout"
+    android:background="@drawable/drawable_gradient_animation_list"
+
+    tools:context="com.mulia754.detikPS.buat.buatVideo">
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="11dp">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:text="Membuat daftar video baru"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/ShowImageView"
+                android:layout_width="350dp"
+                android:layout_height="159dp"
+                app:srcCompat="@drawable/ic_menu_gallery" />
+
+            <Button
+                android:id="@+id/ButtonChooseImage"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded_red"
+                android:text="PILIH GAMBAR"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/et_note_title"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded"
+                android:hint="gambar (terisi otomatis saat sudah pilih gambar)"
+                android:text="."
+                tools:visibility="visible" />
+
+            <EditText
+                android:id="@+id/et_note_content"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/browser_actions_bg_grey"
+                android:hint="judul"
+                android:text="(masih kosong)" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_rounded"
+                android:gravity="center"
+                android:text="Judul Video" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded"
+                android:text="."
+                tools:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/et_note_waktu"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/button_rounded"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="."
+                tools:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/etNoteCover"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/browser_actions_bg_grey"
+                android:ems="10"
+                android:hint="LINK halaman berita"
+                android:text="(masih kosong)" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:background="@drawable/button_rounded"
+                android:text="isi LINK Video (youtube, ig, dll)"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btn_note_submit"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_rounded_red"
+                android:text="TERBITKAN"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

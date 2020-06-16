@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayout"
+    android:background="@drawable/drawable_gradient_animation_list"
+
+    android:padding="@dimen/fab_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="391dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="Menambahkan Berita dengan Link"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_note_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:hint="gambar (terisi otomatis saat sudah pilih gambar)"
+                    android:text="."
+                    tools:visibility="visible" />
+
+                <Button
+                    android:id="@+id/ButtonChooseImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rounded_red"
+                    android:text="PILIH GAMBAR"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_rounded_blue"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rounded_blue"
+                    android:gravity="center_horizontal"
+                    android:text="Judul Berita"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:id="@+id/et_note_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E0FFFFFF"
+                    android:hint="judul"
+                    android:text="(masih kosong)"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_rounded_red"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rounded_red"
+                    android:text="Copy Paste LINK berita"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:id="@+id/etNoteCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:background="#E0FFFFFF"
+                    android:ems="10"
+                    android:hint="LINK halaman berita"
+                    android:text="(masih kosong)"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_rounded_yellow"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvsiswa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#DAD5D5"
+                        android:gravity="center"
+                        android:textColor="#01FFFFFF"
+                        tools:visibility="invisible" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="311dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#00DAD5D5"
+                        android:entries="@array/siswa"
+                        android:gravity="center|center_horizontal" />
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#DAD5D5"
+                        tools:visibility="invisible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvJam"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_rounded"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:text="." />
+
+                    <Button
+                        android:id="@+id/btnPilihTanggal"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_rounded_yellow"
+                        android:onClick="setDate"
+                        android:text="Tanggal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTanggal"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_rounded"
+                        android:gravity="center"
+                        android:text="." />
+
+                    <Button
+                        android:id="@+id/btnPilihJam"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_rounded_yellow"
+                        android:text="Jam" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnOkWaktu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_rounded_yellow"
+                    android:text="waktu ok" />
+
+                <EditText
+                    android:id="@+id/et_note_waktu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/button_rounded"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="." />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_note_submit"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_rounded_green"
+                android:text="TERBITKAN BERITA"
+                android:textColor="#EFEAEA"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</RelativeLayout>

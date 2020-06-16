@@ -1,0 +1,150 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mulia754.detikPS.swipe.aadepan_persit">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background"
+        tools:context="com.mulia754.detikPS.bottom.bottom_videox">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_note"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:text="."
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="invisible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="56dp"
+            android:clickable="true"
+            android:src="@drawable/ic_favorite"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:visibility="invisible" />
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:orientation="vertical"
+                tools:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    tools:visibility="invisible">
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        tools:visibility="invisible">
+
+                        <WebView
+                            android:id="@+id/webviewcover"
+                            android:layout_width="1dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="2.71"
+                            tools:visibility="invisible">
+
+                        </WebView>
+
+                        <TextView
+                            android:id="@+id/welcomeTextView"
+                            android:layout_width="1dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="2.71"
+                            android:background="#640B0A0A"
+                            android:gravity="center"
+                            android:text="TextView"
+                            android:textColor="#FFFFFF"
+                            tools:visibility="invisible" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="2.71"
+                    android:background="@drawable/gradient"
+                    android:orientation="vertical"
+                    tools:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        tools:visibility="invisible" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/gbrx"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="2.71"
+                    android:layout_x="-13dp"
+                    android:layout_y="171dp"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/fetchButton"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:text="Button"
+                    android:textAlignment="textEnd"
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tvlink"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:text="TextView"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rv_note"
+            tools:visibility="invisible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayout"
+    android:background="@drawable/drawable_gradient_animation_list"
+
+    tools:context=".buat.buatBerita">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:gravity="bottom|center_horizontal"
+            android:text="BUAT BERITA DENGAN ISI LINK"
+            android:textAllCaps="true"
+            android:textColor="#FF9800"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnIsiLink"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_rounded_blue"
+            android:text="BERITA TERKINI"
+            android:textColor="#FFC107" />
+
+        <Button
+            android:id="@+id/btnMiliter"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_rounded_blue"
+            android:text="BERITA MILITER"
+            android:textColor="#FFC107" />
+
+        <Button
+            android:id="@+id/btnPersit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_rounded_blue"
+            android:text="BERITA PERSIT"
+            android:textColor="#FFC107" />
+
+        <Button
+            android:id="@+id/btnPolitik"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_rounded_blue"
+            android:text="BERITA POLITIK"
+            android:textColor="#FFC107" />
+
+        <Button
+            android:id="@+id/btnOlahraga"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_rounded_blue"
+            android:text="BERITA OLAHRAGA"
+            android:textColor="#FFC107" />
+
+        <Button
+            android:id="@+id/btnLain"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_rounded_blue"
+            android:text="BERITA LAIN-LAIN"
+            android:textColor="#FFC107" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnManual"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_rounded"
+        android:text="BUAT BERITA MANUAL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+    <Button
+        android:id="@+id/btnBuatWeb"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_rounded_red"
+        android:text="buat tambahan website"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnManual" />
+
+    <Button
+        android:id="@+id/btnVideo"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_rounded_yellow"
+        android:text="buat video baru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuatWeb" />
+</androidx.constraintlayout.widget.ConstraintLayout>

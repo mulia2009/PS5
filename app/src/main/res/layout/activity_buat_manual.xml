@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawable_gradient_animation_list"
+
+    android:padding="@dimen/fab_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Membuat berita berisi Screenshoot tulisan dan gambar yang dibuat manual"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvGambarSebelah"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:text="TextView"
+                tools:visibility="invisible" />
+
+            <Button
+                android:id="@+id/ButtonChooseImage"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:text="PILIH GAMBAR UNTUK ICON"
+                tools:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/et_note_title"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:hint="gambar (terisi otomatis saat sudah pilih gambar)"
+                android:text="xxxxxxxxxxxxx"
+                tools:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/button_rounded_yellow"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvsiswa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#ECE078"
+                            android:gravity="center"
+                            android:textColor="#01FFFFFF"
+                            tools:visibility="invisible" />
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="370dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_rounded_yellow"
+                            android:entries="@array/siswa"
+                            android:gravity="center|center_horizontal" />
+
+                        <Button
+                            android:id="@+id/btn_submit"
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#ECE078"
+                            tools:visibility="invisible" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvJam"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_rounded"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="textPersonName"
+                            android:text="." />
+
+                        <Button
+                            android:id="@+id/btnPilihTanggal"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_rounded_yellow"
+                            android:onClick="setDate"
+                            android:text="pilih Tanggal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvTanggal"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_rounded"
+                            android:gravity="center"
+                            android:text="." />
+
+                        <Button
+                            android:id="@+id/btnPilihJam"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_rounded_yellow"
+                            android:text="tentukan Jam" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnOkWaktu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/button_rounded_blue"
+                        android:text="waktu ok"
+                        android:textColor="#FFFFFF" />
+
+                    <EditText
+                        android:id="@+id/et_note_waktu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:background="@color/design_default_color_surface"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="." />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_note_content"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/design_default_color_surface"
+                android:hint="judul"
+                android:text="(masih kosong)" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_surface"
+                android:gravity="center"
+                android:text="Judul Berita" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/download" />
+
+            <Button
+                android:id="@+id/btniGambarBerita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded_red"
+                android:text="pilih gambar yang akan ditampilkan dalam halaman berita"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txtGambarHalamanBerita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_surface"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/etNoteCover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@color/design_default_color_surface"
+                android:ems="10"
+                android:hint="LINK halaman berita"
+                android:text="." />
+
+            <EditText
+                android:id="@+id/txtBeritaManual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_surface"
+                android:text="(masih kosong)"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_surface"
+                android:text="tulis berita manual"
+                android:textAlignment="center"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_note_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_rounded_red"
+                android:text="TERBITKAN"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</RelativeLayout>

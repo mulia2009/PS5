@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_kontak"
+            android:icon="@drawable/ic_menu_send"
+            android:title="KONTAK" />
+        <item
+            android:id="@+id/nav_telegram"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Bagikan dengan Telegram" />
+        <item
+            android:id="@+id/nav_wa"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Bagikan dengan WA" />
+
+
+    </group>
+
+    <item android:title="Untuk Admin">
+        <menu>
+
+            <item
+                android:id="@+id/nav_buatBerita"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="TERBITKAN BERITA" />
+
+        </menu>
+
+
+    </item>
+
+</menu>

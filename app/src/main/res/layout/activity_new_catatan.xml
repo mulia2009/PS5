@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/constraintLayout"
+    android:background="@drawable/drawable_gradient_animation_list"
+
+    android:layout_height="match_parent"
+    android:padding="@dimen/fab_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:gravity="center_horizontal"
+                android:text="Menambahkan Link Satuan"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/et_note_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5CFFFFFF"
+                android:hint="gambar (terisi otomatis saat sudah pilih gambar)"
+                android:text="."
+                tools:visibility="visible" />
+
+            <Button
+                android:id="@+id/ButtonChooseImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded_red"
+                android:text="PILIH GAMBAR" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_note_content"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="16dp"
+                android:background="#C5FFFFFF"
+                android:hint="judul"
+                android:text="(masih kosong)" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#807D7D"
+                android:gravity="center"
+                android:text="Nama Satuan" />
+
+            <EditText
+                android:id="@+id/et_note_waktu"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="0dp"
+                android:background="#5CFFFFFF"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="10dp"
+                android:text="."
+                tools:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/browser_actions_divider_color"
+                android:text="isi waktu cth: Minggu, 22 Mei 2020)"
+                tools:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etNoteCover"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="0dp"
+                android:background="#C5FFFFFF"
+                android:ems="10"
+                android:hint="LINK halaman berita"
+                android:text="(masih kosong)" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="#807D7D"
+                android:gravity="center"
+                android:text="isi LINK Satuan"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btn_note_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_rounded_red"
+                android:text="TERBITKAN" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</RelativeLayout>

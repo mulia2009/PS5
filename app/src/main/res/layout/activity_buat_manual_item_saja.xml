@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/drawable_gradient_animation_list"
+    android:id="@+id/constraintLayout"
+    android:layout_height="match_parent"
+    android:padding="@dimen/fab_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Hanya gambar yang digunakan untuk icon"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/ShowImageView"
+                android:layout_width="match_parent"
+                android:layout_height="159dp"
+                app:srcCompat="@drawable/ic_menu_gallery" />
+
+            <Button
+                android:id="@+id/ButtonChooseImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded_yellow"
+                android:text="PILIH GAMBAR UNTUK ICON" />
+
+            <TextView
+                android:id="@+id/et_note_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded"
+                android:hint="gambar (terisi otomatis saat sudah pilih gambar)"
+                android:text="." />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:text="isi waktu cth: Minggu, 22 Mei 2020)"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/et_note_waktu"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:hint="(masih kosong)"
+                android:inputType="textPersonName"
+                android:text="(masih kosong)"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnLanjut"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:background="@drawable/button_rounded_green"
+                android:text="LANJUT" />
+
+            <EditText
+                android:id="@+id/et_note_content"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="16dp"
+                android:hint="judul"
+                android:text="(masih kosong)"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:text="Judul Berita"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/download" />
+
+            <Button
+                android:id="@+id/btniGambarBerita"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:text="pilih gambar yang akan ditampilkan dalam halaman berita"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/txtGambarHalamanBerita"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:text="TextView"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/etNoteCover"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:hint="LINK halaman berita"
+                android:text="."
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/txtBeritaManual"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:ems="10"
+                android:gravity="top"
+                android:inputType="text"
+                android:text="(masih kosong)"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tulis berita manual"
+                android:textAlignment="center"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_note_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="TERBITKAN"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
